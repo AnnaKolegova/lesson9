@@ -2,14 +2,19 @@
 int n=Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int m=Convert.ToInt32(Console.ReadLine());
-FillNumber(n,m);
-void FillNumber(int n, int m)
+FillNumber(m,n);
+void FillNumber(int m, int a=0)
 {
-    if (n%3==0)&& (n>=m);
+    if (a%3==0)
+    {
+        Console.WriteLine(a);      
+    }
+    a++;
+    if (a>m)
     {
         return;
     }
-    FillNumber(n, m);
+    FillNumber(m, a);
   
 
 }
